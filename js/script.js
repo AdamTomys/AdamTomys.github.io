@@ -117,7 +117,7 @@ $(document).ready(function() {
         parentEl.find('[data-task-content-input]').val(taskContent);
     }
 
-    $('[data-task-add-button]').on('click', handleTaskSubmitRequest);
+    $('[data-task-add-form]').on('submit', handleTaskSubmitRequest);
 
     tasksContainer.on('click', '[data-task-edit-button]', toggleEditingState);
     tasksContainer.on('click', '[data-task-edit-abort-button]', toggleEditingState);
