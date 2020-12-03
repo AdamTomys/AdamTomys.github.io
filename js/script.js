@@ -187,8 +187,8 @@ $(document).ready(function() {
           dataType: 'json',
           data: JSON.stringify({
           name: relatedTask.title,
-             description: relatedTask.content,
-             listId: selectedListId
+             desc: relatedTask.content,
+             idList: selectedListId
           }),
           success: function(data) {
              console.log('Card created - ' + data.shortUrl);
